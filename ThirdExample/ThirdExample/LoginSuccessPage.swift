@@ -20,13 +20,13 @@ struct LoginSuccessPage: View {
                         .foregroundColor(.white)
                     
                     Image(systemName: "checkmark")
-                        .resizable().imageScale(.medium)
+                        .resizable()
+                        .padding()
                         .foregroundColor(.green)
-                        .background(.gray)
-                        .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                        .opacity(0.3)
-                        .frame(width: 60,height: 60)
+                        .background(Circle()).opacity(0.8)
+                        .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,height: 100)
                         .frame(maxHeight:400, alignment: .top)
+                        
                     VStack{
                         Text("Welcome Back")
                             .font(.largeTitle)
